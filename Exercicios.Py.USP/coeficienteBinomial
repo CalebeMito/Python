@@ -1,0 +1,15 @@
+from math import  factorial
+
+#def fatorial(n):
+ #   fat = 1
+  #  while (n > 1):
+ #       fat = fat * n
+  #      n = n - 1
+ #   return fat
+
+n = int(input('Digite o numero de n: '))
+x = int(input('Digite o numero de x: '))
+
+coeficiente = factorial(n) / factorial(x) * (factorial(n) - factorial(x))
+
+print('O numero binomial de {}, {} e de: '.format(n, x) ,coeficiente)
